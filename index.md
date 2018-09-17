@@ -5,5 +5,5 @@ This is Dankey Kaang.
 ## Latest Posts
 
 {% for post in site.posts offset:1 limit:2 %}
-    [{% post.title %}]({% link post.link %})
+    [{{ post.title }}]({{ post.link }})
 {% endfor %}
